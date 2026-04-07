@@ -39,7 +39,7 @@ export function Sobre() {
               <span className="text-[#0057B8] font-bold">✓ Sprint 2:</span> Implementação da responsividade e JavaScript básico.
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-[#0057B8] font-bold">🚀 Sprint 3:</span> Migração para React, componentização e TailwindCSS.
+              <span className="text-[#0057B8] font-bold"> Sprint 3:</span> Migração para React, componentização e TailwindCSS.
             </li>
           </ul>
         </section>

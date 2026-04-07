@@ -44,7 +44,7 @@ export function Integrantes() {
           <div className="flex justify-center gap-4">
             <a href="https://github.com/GabrielDeottiZanatta" target="_blank" rel="noopener noreferrer" className="text-[#0057B8] font-bold hover:underline">GitHub</a>
             <span className="text-gray-400">|</span>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#0057B8] font-bold hover:underline">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/gabriel-deotti-zanatta-42750735b/" target="_blank" rel="noopener noreferrer" className="text-[#0057B8] font-bold hover:underline">LinkedIn</a>
           </div>
         </div>
 

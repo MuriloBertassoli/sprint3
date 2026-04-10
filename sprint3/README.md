@@ -1,73 +1,34 @@
-# React + TypeScript + Vite
+# 🦷 Turma do Bem - Plataforma de Gestão (Sprint 03)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório oficial da nova plataforma digital da ONG **Turma do Bem**. Este projeto faz parte da Sprint 03 do curso de Análise e Desenvolvimento de Sistemas (Turma 1TDSPA) e tem como objetivo modernizar e otimizar a gestão de contatos e atendimentos da instituição.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 O Projeto
+A motivação principal para a evolução desta plataforma foi a dificuldade que a ONG enfrentava para lidar com informações espalhadas. A solução foi criar uma **SPA (Single Page Application)** moderna, rápida e responsiva, garantindo que o atendimento a quem mais precisa seja eficiente.
 
-## React Compiler
+## 🚀 Funcionalidades e Requisitos Atendidos
+Nesta terceira Sprint, o projeto evoluiu de HTML/CSS/JS puro para um ecossistema React completo:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Navegação SPA:** Implementada com `react-router-dom`, permitindo transição de páginas (Home, Sobre, Integrantes, FAQ e Contato) sem recarregar o navegador.
+- **Componentização:** Estrutura modular dividida em `pages` e `components` (Header, Footer).
+- **Estilização com TailwindCSS:** Todo o layout, responsividade e paleta de cores institucional foram construídos utilizando classes utilitárias do Tailwind, sem dependência de bibliotecas externas de UI.
+- **Interatividade (Hooks):** A página de FAQ utiliza o hook `useState` do React para criar componentes de acordeão (expandir/recolher respostas) de forma dinâmica.
+- **Formulários Dinâmicos:** A página de Contato utiliza a biblioteca `react-hook-form` para captura de dados e validação, combinada com o hook `useNavigate` para redirecionamento após o envio bem-sucedido.
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
+* **React.js** (com Vite)
+* **TypeScript** (para tipagem estática e segurança)
+* **TailwindCSS** (Estilização)
+* **React Router DOM** (Roteamento)
+* **React Hook Form** (Gestão de formulários)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚙️ Como executar o projeto localmente
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Siga os passos abaixo para rodar a aplicação na sua máquina:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone o repositório:**
+   ```bash
+   git clone ...

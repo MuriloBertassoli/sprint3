@@ -31,4 +31,4 @@ Siga os passos abaixo para rodar a aplicação na sua máquina:
 
 1. **Clone o repositório:**
    ```bash
-   git clone ...
+   git clone https://github.com/MuriloBertassoli/sprint3.git
